@@ -1,0 +1,9 @@
+You have a running container named my_app, but it's not behaving as expected. You want to check its logs to debug any errors.
+Write the command to view its logs and follow new logentries in real-time.
+
+step1:- make sure that my_app should be running 
+  docker ps
+step2:- To check its logs
+  docker logs my_app
+step3:- For new logentries in real-time
+  docker logs -f my_app
