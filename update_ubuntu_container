@@ -1,0 +1,26 @@
+Q: Update the ubuntu container, install apache and php, then push updated on to docker hub.
+
+The purpose of updating the Ubuntu container, installing Apache and PHP, and pushing it to Docker Hub is to
+create a ready-to-use web server environment that is secure, portable, shareable, and deployable on any system.
+
+COmmands:
+          STEP 1: Firstly pull the disired image from dockerhub
+                    Docker pull ubuntu
+          STEP 2: to run the image 
+                    Docker run -it --name myubuntu ubuntu
+          STEP 3: to update the container
+                    #apt update
+                    #apt upgrade -y
+          STEP 4: to install the apache and php
+                    # apt install apache2 -y
+                    # apt install php -y
+          STEP 5: check wather apache and php is inastall
+                    # apache2 -v
+                    # php -v
+                    # exit
+          STEP 6: now tag the image
+                    docker tag ubuntu mohtbhau777/update_ubuntu_container:v2
+          STEP 7: check the tag 
+                    docker images
+          STEP 8: push the image to dockerhub
+                    docker push mohtbhau777/update_ubuntu_container:v2
