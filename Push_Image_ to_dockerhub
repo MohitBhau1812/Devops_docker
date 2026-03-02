@@ -1,0 +1,14 @@
+How to Push Docker Image to Docker Hub.
+
+meanaing: Pushing a Docker image means uploading your locally built Docker image from your computer to Docker Hub, which is an online container registry.
+
+STEP 1: pull the disired image from docker hub
+        Docker pull php
+STEP 2: check the image pulled
+        Docker images
+STEP 3: tag the image
+        Docker tag php mohtbhau777/smaple:v1
+STEP 4: check the tag 
+        Docker images
+STEP 5: push the tag to the docker hub
+        Docker push mohtbhau777/smaple:v1
